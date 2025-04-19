@@ -9,11 +9,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class DashboardController {
+public class MainController {
 
     @FXML private MFXRectangleToggleNode btnDashboard;
     @FXML private MFXRectangleToggleNode btnFacturacion;
@@ -58,6 +57,7 @@ public class DashboardController {
         String rutaFXML = null;
 
         switch (nombreSeccion.toLowerCase()) {
+
             case "dashboard":
                 rutaFXML = "/view/dashboard.fxml";
                 break;
@@ -72,7 +72,7 @@ public class DashboardController {
                 rutaFXML = "/view/inventario.fxml";
                 break;
             case "sri":
-                rutaFXML = "/view/ejemplo.fxml";
+                rutaFXML = "/view/sri.fxml";
                 break;
             case "reportes":
                 rutaFXML = "/view/reportes.fxml";

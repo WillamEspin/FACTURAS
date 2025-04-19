@@ -21,7 +21,7 @@ public class LoginController {
 
         if (usuario.equals("admin") && clave.equals("admin")) {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dashboard.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/main.fxml"));
                 Parent root = loader.load();
                 Stage stage = (Stage) txtUsuario.getScene().getWindow();
                 stage.setScene(new Scene(root));
