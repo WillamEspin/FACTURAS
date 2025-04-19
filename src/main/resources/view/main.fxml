@@ -6,21 +6,21 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="850.0" styleClass="rootPane" stylesheets="@../css/Demo.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.facturas.controller.MainController">
-    <HBox fx:id="windowHeader" alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="50.0" prefWidth="100.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="850.0" styleClass="rootPane" stylesheets="@../css/Demo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.facturas.controller.MainController">
+    <HBox fx:id="windowHeader" alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="50.0" prefWidth="100.0" spacing="10.0" styleClass="sidebar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <Label text="Label" />
         <MFXCircleToggleNode text="Circle Toggle" GridPane.columnIndex="4" GridPane.rowIndex="5">
             <graphic>
-                <MFXFontIcon description="fas-bell" size="32.0" />
+                <MFXFontIcon description="" size="32.0" />
             </graphic>
         </MFXCircleToggleNode>
         <MFXCircleToggleNode text="Circle Toggle" GridPane.columnIndex="4" GridPane.rowIndex="5">
             <graphic>
-                <MFXFontIcon description="fas-bell" size="32.0" />
+                <MFXFontIcon description="" size="32.0" />
             </graphic>
         </MFXCircleToggleNode>
     </HBox>
-    <VBox layoutX="227.0" layoutY="51.0" prefWidth="250.0" styleClass="sidebar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <VBox layoutX="227.0" layoutY="51.0" prefWidth="250.0" styleClass="sidebar" stylesheets="@../css/MFXColors.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
         <padding>
             <Insets bottom="10.0" left="10.0" top="60.0" />
         </padding>
@@ -45,14 +45,14 @@
             <children>
 
 
-                <MFXRectangleToggleNode fx:id="btnDashboard" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="220.0" text="Dashboard"/>
+                <MFXRectangleToggleNode fx:id="btnDashboard" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="220.0" text="Dashboard" />
                 <MFXRectangleToggleNode fx:id="btnCompras" onAction="#mostrarCompras" prefHeight="60.0" prefWidth="220.0" text="Compras">
                 </MFXRectangleToggleNode>
                 <MFXRectangleToggleNode fx:id="btnVentas" prefHeight="60.0" prefWidth="220.0" text="Ventas">
                 </MFXRectangleToggleNode>
                 <MFXRectangleToggleNode fx:id="btnInventario" prefHeight="60.0" prefWidth="220.0" text="Inventario">
                 </MFXRectangleToggleNode>
-                <MFXRectangleToggleNode fx:id="btSri" prefHeight="60.0" prefWidth="220.0" text="SRI">
+                <MFXRectangleToggleNode fx:id="btnSri" prefHeight="60.0" prefWidth="220.0" text="SRI">
                 </MFXRectangleToggleNode>
                 <MFXRectangleToggleNode fx:id="btnCCobrar" prefHeight="60.0" prefWidth="220.0" text="Cuentas por Cobrar">
                 </MFXRectangleToggleNode>

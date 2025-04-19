@@ -22,7 +22,7 @@
                 <Insets />
             </GridPane.margin>
             <children>
-                <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="FACTURACION" />
+                <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="C PAGAR" />
             </children>
         </StackPane>
         <StackPane minHeight="150.0" minWidth="150.0" styleClass="grid-background" GridPane.columnIndex="2">

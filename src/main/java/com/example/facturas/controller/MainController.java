@@ -15,11 +15,12 @@ import javafx.stage.Stage;
 public class MainController {
 
     @FXML private MFXRectangleToggleNode btnDashboard;
-    @FXML private MFXRectangleToggleNode btnFacturacion;
     @FXML private MFXRectangleToggleNode btnCompras;
     @FXML private MFXRectangleToggleNode btnVentas;
     @FXML private MFXRectangleToggleNode btnInventario;
-    @FXML private MFXRectangleToggleNode btSri;
+    @FXML private MFXRectangleToggleNode btnSri;
+    @FXML private MFXRectangleToggleNode btnCCobrar;
+    @FXML private MFXRectangleToggleNode btnCPagar;
     @FXML private MFXRectangleToggleNode btnReportes;
     @FXML private MFXRectangleToggleNode btnUsuario;
     @FXML private MFXRectangleToggleNode btnSalir;
@@ -34,7 +35,9 @@ public class MainController {
         btnCompras.setToggleGroup(toggleGroup);
         btnVentas.setToggleGroup(toggleGroup);
         btnInventario.setToggleGroup(toggleGroup);
-        btSri.setToggleGroup(toggleGroup);
+        btnSri.setToggleGroup(toggleGroup);
+        btnCCobrar.setToggleGroup(toggleGroup);
+        btnCPagar.setToggleGroup(toggleGroup);
         btnReportes.setToggleGroup(toggleGroup);
         btnUsuario.setToggleGroup(toggleGroup);
         btnSalir.setToggleGroup(toggleGroup);
@@ -73,6 +76,15 @@ public class MainController {
             case "sri":
                 rutaFXML = "/view/sri.fxml";
                 break;
+
+            case "ccobrar":
+                rutaFXML = "/view/ccobrar.fxml";
+                break;
+
+            case "cpagar":
+                rutaFXML = "/view/cpagar.fxml";
+                break;
+
             case "reportes":
                 rutaFXML = "/view/reportes.fxml";
                 break;
