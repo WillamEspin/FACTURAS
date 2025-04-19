@@ -31,7 +31,6 @@ public class MainController {
     public void initialize() {
         // Agrupar los botones
         btnDashboard.setToggleGroup(toggleGroup);
-        btnFacturacion.setToggleGroup(toggleGroup);
         btnCompras.setToggleGroup(toggleGroup);
         btnVentas.setToggleGroup(toggleGroup);
         btnInventario.setToggleGroup(toggleGroup);
@@ -62,8 +61,8 @@ public class MainController {
                 rutaFXML = "/view/dashboard.fxml";
                 break;
 
-            case "facturación":
-                rutaFXML = "/view/facturacion.fxml";
+            case "compras":
+                rutaFXML = "/view/compras.fxml";
                 break;
             case "ventas":
                 rutaFXML = "/view/ventas.fxml";

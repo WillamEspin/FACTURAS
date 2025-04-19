@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="850.0" styleClass="rootPane" stylesheets="@../css/Demo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.facturas.controller.MainController">
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="850.0" styleClass="rootPane" stylesheets="@../css/Demo.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.facturas.controller.MainController">
     <HBox fx:id="windowHeader" alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="50.0" prefWidth="100.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <Label text="Label" />
         <MFXCircleToggleNode text="Circle Toggle" GridPane.columnIndex="4" GridPane.rowIndex="5">
@@ -45,37 +45,28 @@
             <children>
 
 
-                <MFXRectangleToggleNode fx:id="btnDashboard" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="220.0" text="Dashboard">
-
+                <MFXRectangleToggleNode fx:id="btnDashboard" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="220.0" text="Dashboard"/>
+                <MFXRectangleToggleNode fx:id="btnCompras" onAction="#mostrarCompras" prefHeight="60.0" prefWidth="220.0" text="Compras">
                 </MFXRectangleToggleNode>
-                <MFXRectangleToggleNode fx:id="btnFacturacion" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="220.0" text="Facturación">
-
-                            </MFXRectangleToggleNode>
-                    <MFXRectangleToggleNode fx:id="btnCompras" onAction="#mostrarCompras" prefHeight="60.0" prefWidth="220.0" text="Compras">
-
-                    </MFXRectangleToggleNode>
-
-                    <MFXRectangleToggleNode fx:id="btnVentas" prefHeight="60.0" prefWidth="220.0" text="Ventas">
-
-            </MFXRectangleToggleNode>
-                    <MFXRectangleToggleNode fx:id="btnInventario" prefHeight="60.0" prefWidth="220.0" text="Inventario">
-
-                    </MFXRectangleToggleNode>
-
-                    <MFXRectangleToggleNode fx:id="btSri" prefHeight="60.0" prefWidth="220.0" text="SRI">
-
-                    </MFXRectangleToggleNode>
-                    <MFXRectangleToggleNode fx:id="btnReportes" prefHeight="60.0" prefWidth="220.0" text="Reportes">
-
-                    </MFXRectangleToggleNode>
-                    <MFXRectangleToggleNode fx:id="btnUsuario" prefHeight="60.0" prefWidth="220.0" text="Usuario">
-
-                    </MFXRectangleToggleNode>
-                    <MFXRectangleToggleNode fx:id="btnSalir" prefHeight="60.0" prefWidth="220.0" text="Salir">
+                <MFXRectangleToggleNode fx:id="btnVentas" prefHeight="60.0" prefWidth="220.0" text="Ventas">
+                </MFXRectangleToggleNode>
+                <MFXRectangleToggleNode fx:id="btnInventario" prefHeight="60.0" prefWidth="220.0" text="Inventario">
+                </MFXRectangleToggleNode>
+                <MFXRectangleToggleNode fx:id="btSri" prefHeight="60.0" prefWidth="220.0" text="SRI">
+                </MFXRectangleToggleNode>
+                <MFXRectangleToggleNode fx:id="btnCCobrar" prefHeight="60.0" prefWidth="220.0" text="Cuentas por Cobrar">
+                </MFXRectangleToggleNode>
+                <MFXRectangleToggleNode fx:id="btnCPagar" prefHeight="60.0" prefWidth="220.0" text="Cuentas por Pagar">
+                </MFXRectangleToggleNode>
+                <MFXRectangleToggleNode fx:id="btnReportes" prefHeight="60.0" prefWidth="220.0" text="Reportes">
+                </MFXRectangleToggleNode>
+                <MFXRectangleToggleNode fx:id="btnUsuario" prefHeight="60.0" prefWidth="220.0" text="Usuario">
+                </MFXRectangleToggleNode>
+                <MFXRectangleToggleNode fx:id="btnSalir" prefHeight="60.0" prefWidth="220.0" text="Salir">
                         <graphic>
                             <MFXFontIcon description="mfx-user" size="24" />
                         </graphic>
-                    </MFXRectangleToggleNode>
+                </MFXRectangleToggleNode>
 
             </children></VBox>
         </MFXScrollPane>
