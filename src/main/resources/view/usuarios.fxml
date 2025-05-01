@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<ScrollPane xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.facturas.controller.UsuarioController"
+            fitToWidth="true"
+            pannable="true"
+            prefHeight="600"
+            prefWidth="400">
+
+    <VBox spacing="10" style="-fx-padding: 20;">
+        <ImageView fx:id="userImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"/>
+        <Button onAction="#userFoto" text="Seleccionar Foto" />
+        <Separator prefWidth="200.0" />
+
+        <Label text="DATOS PERSONALES" />
+        <Label text="Cédula" />
+        <TextField fx:id="userCedula" />
+        <Label text="Nombres" />
+        <TextField fx:id="userNombres" />
+        <Label text="Apellidos" />
+        <TextField fx:id="userApellidos" />
+        <Label text="Teléfono" />
+        <TextField fx:id="userTelefono" />
+        <Label text="Estado Civil" />
+        <TextField fx:id="userEstcivil" />
+        <Label text="Fecha de Nacimiento" />
+        <DatePicker fx:id="userFechaNacimiento"/>
+        <Label text="Dirección" />
+        <TextField fx:id="userDireccion" />
+        <Label text="Correo" />
+        <TextField fx:id="userCorreo" />
+
+        <Separator prefWidth="200.0" />
+        <Label text="CONTACTO DE EMERGENCIA" />
+        <Label text="Nombres" />
+        <TextField fx:id="contEnombres" />
+        <Label text="Apellidos" />
+        <TextField fx:id="contEapellidos" />
+        <Label text="Dirección" />
+        <TextField fx:id="contEdireccion" />
+        <Label text="Teléfono" />
+        <TextField fx:id="contEtelefono" />
+        <Label text="Correo" />
+        <TextField fx:id="contECorreo" />
+
+        <Button onAction="#mostrarEditarusuario" text="Editar" />
+        <Button onAction="#mostrarGuardarusuario" text="Guardar" />
+    </VBox>
+
+</ScrollPane>
