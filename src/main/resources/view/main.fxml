@@ -5,18 +5,22 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="850.0" styleClass="rootPane" stylesheets="@../css/Demo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.facturas.controller.MainController">
-    <HBox fx:id="windowHeader" alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="50.0" prefWidth="100.0" spacing="10.0" styleClass="sidebar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-      <Label text="Label" />
-        <MFXCircleToggleNode text="Circle Toggle" GridPane.columnIndex="4" GridPane.rowIndex="5">
+<AnchorPane fx:id="rootPane" maxHeight="600.0" maxWidth="850.0" minHeight="600.0" minWidth="850.0" prefHeight="600.0" prefWidth="850.0" styleClass="rootPane" stylesheets="@../css/Demo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.facturas.controller.MainController">
+    <HBox fx:id="windowHeader" alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="50.0" prefWidth="100.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Label text="Bienvenido usuario">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <MFXCircleToggleNode text="Notificaciones" GridPane.columnIndex="4" GridPane.rowIndex="5">
             <graphic>
-                <MFXFontIcon description="" size="32.0" />
+                <MFXFontIcon description="mfx-bell" size="32.0" />
             </graphic>
         </MFXCircleToggleNode>
-        <MFXCircleToggleNode text="Circle Toggle" GridPane.columnIndex="4" GridPane.rowIndex="5">
+        <MFXCircleToggleNode text="Configuracion" GridPane.columnIndex="4" GridPane.rowIndex="5">
             <graphic>
-                <MFXFontIcon description="" size="32.0" />
+                <MFXFontIcon description="mfx-gear" size="32.0" />
             </graphic>
         </MFXCircleToggleNode>
     </HBox>
@@ -29,11 +33,6 @@
                 <StackPane fx:id="logoContainer" />
             </graphic>
         </Label>
-        <Label styleClass="menu-label" text="Components">
-            <VBox.margin>
-                <Insets left="5.0" top="40.0" />
-            </VBox.margin>
-        </Label>
         <MFXScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" VBox.vgrow="ALWAYS">
             <VBox.margin>
                 <Insets bottom="10.0" left="5.0" top="15.0" />
@@ -45,27 +44,26 @@
             <children>
 
 
-                <MFXRectangleToggleNode fx:id="btnDashboard" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="220.0" text="Dashboard" />
-                <MFXRectangleToggleNode fx:id="btnCompras" onAction="#mostrarCompras" prefHeight="60.0" prefWidth="220.0" text="Compras">
+                <MFXRectangleToggleNode fx:id="btnDashboard" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="220.0" text="Dashboard" userData="dashboard" />
+                <MFXRectangleToggleNode fx:id="btnCompras" onAction="#mostrarCompras" prefHeight="60.0" prefWidth="220.0" text="Compras" userData="compras">
                 </MFXRectangleToggleNode>
-                <MFXRectangleToggleNode fx:id="btnVentas" prefHeight="60.0" prefWidth="220.0" text="Ventas">
+                <MFXRectangleToggleNode fx:id="btnVentas" prefHeight="60.0" prefWidth="220.0" text="Ventas" userData="ventas">
                 </MFXRectangleToggleNode>
-                <MFXRectangleToggleNode fx:id="btnInventario" prefHeight="60.0" prefWidth="220.0" text="Inventario">
+                <MFXRectangleToggleNode fx:id="btnInventario" prefHeight="60.0" prefWidth="220.0" text="Inventario" userData="inventario">
                 </MFXRectangleToggleNode>
-                <MFXRectangleToggleNode fx:id="btnSri" prefHeight="60.0" prefWidth="220.0" text="SRI">
+                <MFXRectangleToggleNode fx:id="btnSri" prefHeight="60.0" prefWidth="220.0" text="SRI" userData="sri">
                 </MFXRectangleToggleNode>
-                <MFXRectangleToggleNode fx:id="btnCCobrar" prefHeight="60.0" prefWidth="220.0" text="Cuentas por Cobrar">
+                <MFXRectangleToggleNode fx:id="btnCCobrar" prefHeight="60.0" prefWidth="220.0" text="Cuentas por Cobrar" userData="ccobrar">
                 </MFXRectangleToggleNode>
-                <MFXRectangleToggleNode fx:id="btnCPagar" prefHeight="60.0" prefWidth="220.0" text="Cuentas por Pagar">
+                <MFXRectangleToggleNode fx:id="btnCPagar" prefHeight="60.0" prefWidth="220.0" text="Cuentas por Pagar" userData="cpagar">
                 </MFXRectangleToggleNode>
-                <MFXRectangleToggleNode fx:id="btnReportes" prefHeight="60.0" prefWidth="220.0" text="Reportes">
+                <MFXRectangleToggleNode fx:id="btnBancos" prefHeight="60.0" prefWidth="220.0" text="Bancos" userData="bancos">
                 </MFXRectangleToggleNode>
-                <MFXRectangleToggleNode fx:id="btnUsuario" prefHeight="60.0" prefWidth="220.0" text="Usuario">
+                <MFXRectangleToggleNode fx:id="btnReportes" prefHeight="60.0" prefWidth="220.0" text="Reportes" userData="reportes">
+                </MFXRectangleToggleNode>
+                <MFXRectangleToggleNode fx:id="btnUsuario" prefHeight="60.0" prefWidth="220.0" text="Usuario" userData="usuario">
                 </MFXRectangleToggleNode>
                 <MFXRectangleToggleNode fx:id="btnSalir" prefHeight="60.0" prefWidth="220.0" text="Salir">
-                        <graphic>
-                            <MFXFontIcon description="mfx-user" size="24" />
-                        </graphic>
                 </MFXRectangleToggleNode>
 
             </children></VBox>

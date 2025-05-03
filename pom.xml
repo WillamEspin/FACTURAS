@@ -57,7 +57,11 @@
       <version>${javafx.version}</version>
     </dependency>
 
-    <!-- JUnit -->
+    <dependency>
+      <groupId>io.github.palexdev</groupId>
+      <artifactId>virtualizedfx</artifactId>
+      <version>21.5.0</version>
+    </dependency><!-- JUnit -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>

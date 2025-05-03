@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.*?>
 <?import javafx.geometry.*?>
@@ -25,7 +25,7 @@
     <padding>
         <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
     </padding>
-    <StackPane minHeight="150.0" minWidth="300.0" styleClass="grid-background" GridPane.columnSpan="3" GridPane.rowSpan="2">
+    <StackPane minHeight="150.0" minWidth="300.0" prefHeight="150.0" prefWidth="304.0" styleClass="grid-background" GridPane.columnSpan="3" GridPane.rowSpan="2">
         <GridPane.margin>
             <Insets left="-15.0" right="-15.0" />
         </GridPane.margin>

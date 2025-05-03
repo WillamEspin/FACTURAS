@@ -2,13 +2,12 @@ package com.example.facturas.controller;
 
 import com.example.facturas.Main;
 import io.github.palexdev.materialfx.controls.MFXButton;
+import io.github.palexdev.materialfx.controls.MFXCircleToggleNode;
 import io.github.palexdev.materialfx.controls.MFXRectangleToggleNode;
 import io.github.palexdev.materialfx.dialogs.MFXGenericDialog;
 import io.github.palexdev.materialfx.dialogs.MFXStageDialog;
-import io.github.palexdev.materialfx.font.MFXFontIcon;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
@@ -23,11 +22,17 @@ public class MainController {
     @FXML private MFXRectangleToggleNode btnSri;
     @FXML private MFXRectangleToggleNode btnCCobrar;
     @FXML private MFXRectangleToggleNode btnCPagar;
+    @FXML private MFXRectangleToggleNode btnBancos;
     @FXML private MFXRectangleToggleNode btnReportes;
     @FXML private MFXRectangleToggleNode btnUsuario;
     @FXML private MFXRectangleToggleNode btnSalir;
 
     private final ToggleGroup toggleGroup = new ToggleGroup();
+
+    @FXML private MFXCircleToggleNode btnConfiguracion;
+    @FXML private MFXCircleToggleNode btnNotificacion;
+    private final ToggleGroup Msuperior = new ToggleGroup();
+
 
     @FXML
 
@@ -40,6 +45,7 @@ public class MainController {
         btnSri.setToggleGroup(toggleGroup);
         btnCCobrar.setToggleGroup(toggleGroup);
         btnCPagar.setToggleGroup(toggleGroup);
+        btnBancos.setToggleGroup(toggleGroup);
         btnReportes.setToggleGroup(toggleGroup);
         btnUsuario.setToggleGroup(toggleGroup);
         btnSalir.setToggleGroup(toggleGroup);
@@ -58,6 +64,9 @@ public class MainController {
                 }
             }
         });
+        cambiarContenido("dashboard");
+        btnDashboard.setSelected(true);
+
     }
 
     private void cambiarContenido(String nombreSeccion) {
@@ -69,6 +78,7 @@ public class MainController {
             case "sri" -> "/view/sri.fxml";
             case "ccobrar" -> "/view/ccobrar.fxml";
             case "cpagar" -> "/view/cpagar.fxml";
+            case "bancos" -> "/view/bancos.fxml";
             case "reportes" -> "/view/reportes.fxml";
             case "usuario" -> "/view/usuario.fxml";
             default -> null;
@@ -80,8 +90,6 @@ public class MainController {
             System.out.println("Sección no reconocida: " + nombreSeccion);
         }
     }
-
-
 
     @FXML
     private BorderPane contentArea;

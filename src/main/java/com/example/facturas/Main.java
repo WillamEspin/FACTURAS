@@ -16,6 +16,8 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.setTitle("Sistema de Facturación");
         stage.show();
+        //desactiva el poder modificar el tama;o de la pantalla
+        stage.setResizable(false);
     }
 
     public static void main(String[] args) {

@@ -4,7 +4,8 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane alignment="CENTER" hgap="20.0" prefHeight="600.0" prefWidth="600.0" styleClass="grid-pane" stylesheets="@../css/Common.css" vgap="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane alignment="CENTER" hgap="20.0" prefHeight="600.0" prefWidth="600.0" styleClass="grid-pane" stylesheets="@../css/Common.css" vgap="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.example.facturas.controller.VentasController">
   <columnConstraints>
     <ColumnConstraints halignment="CENTER" />
     <ColumnConstraints halignment="CENTER" />
@@ -22,7 +23,7 @@
          <Insets />
       </GridPane.margin>
          <children>
-            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="VENTAS" />
+            <MFXButton onAction="#abrirFacturasFisicas" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="COMPOBANTES FISICOS" textAlignment="CENTER" wrapText="true" />
          </children>
    </StackPane>
       <StackPane minHeight="150.0" minWidth="150.0" styleClass="grid-background" GridPane.columnIndex="2">
@@ -30,7 +31,7 @@
             <Insets />
          </GridPane.margin>
          <children>
-            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="Button" />
+            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="DEVOLUCION" />
          </children>
       </StackPane>
       <StackPane minHeight="150.0" minWidth="150.0" styleClass="grid-background" GridPane.rowIndex="1">
@@ -38,39 +39,39 @@
             <Insets />
          </GridPane.margin>
          <children>
-            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="Button" />
+            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="IMPORTAR" />
          </children>
       </StackPane>
       <StackPane minHeight="150.0" minWidth="150.0" styleClass="grid-background" GridPane.columnIndex="2" GridPane.rowIndex="1">
          <children>
-            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="Button" />
+            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="OPCIONES" />
          </children></StackPane>
       <StackPane minHeight="150.0" minWidth="150.0" styleClass="grid-background" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets />
          </GridPane.margin>
          <children>
-            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="Button" />
+            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="DESCUENTOS" />
          </children></StackPane>
       <StackPane minHeight="150.0" minWidth="150.0" styleClass="grid-background" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <children>
-            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="Button" />
+            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="REPORTES" />
          </children></StackPane>
       <StackPane minHeight="150.0" minWidth="150.0" styleClass="grid-background" GridPane.columnIndex="1">
          <GridPane.margin>
             <Insets />
          </GridPane.margin>
          <children>
-            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="Button" />
+            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="COMPROBANTES ELECTRONICOS" textAlignment="CENTER" wrapText="true" />
          </children>
       </StackPane>
       <StackPane minHeight="150.0" minWidth="150.0" styleClass="grid-background" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
-            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="Button" />
+            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="EXPORTAR" />
          </children></StackPane>
       <StackPane minHeight="150.0" minWidth="150.0" styleClass="grid-background" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <children>
-            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="Button" />
+            <MFXButton mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="PUNTOS" />
          </children></StackPane>
    </children>
 </GridPane>
