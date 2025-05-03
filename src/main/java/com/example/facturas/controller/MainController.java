@@ -5,8 +5,10 @@ import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXRectangleToggleNode;
 import io.github.palexdev.materialfx.dialogs.MFXGenericDialog;
 import io.github.palexdev.materialfx.dialogs.MFXStageDialog;
+import io.github.palexdev.materialfx.font.MFXFontIcon;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
@@ -49,55 +51,36 @@ public class MainController {
                 if (toggle == btnSalir) {
                     mostrarDialogoSalir();
                 } else {
-                    cambiarContenido(toggle.getText());
+                    Object data = toggle.getUserData();
+                    if (data != null) {
+                        cambiarContenido(data.toString());
+                    }
                 }
             }
         });
     }
 
     private void cambiarContenido(String nombreSeccion) {
-        String rutaFXML = null;
+        String rutaFXML = switch (nombreSeccion.toLowerCase()) {
+            case "dashboard" -> "/view/dashboard.fxml";
+            case "compras" -> "/view/compras.fxml";
+            case "ventas" -> "/view/ventas.fxml";
+            case "inventario" -> "/view/inventario.fxml";
+            case "sri" -> "/view/sri.fxml";
+            case "ccobrar" -> "/view/ccobrar.fxml";
+            case "cpagar" -> "/view/cpagar.fxml";
+            case "reportes" -> "/view/reportes.fxml";
+            case "usuario" -> "/view/usuario.fxml";
+            default -> null;
+        };
 
-        switch (nombreSeccion.toLowerCase()) {
-
-            case "dashboard":
-                rutaFXML = "/view/dashboard.fxml";
-                break;
-
-            case "compras":
-                rutaFXML = "/view/compras.fxml";
-                break;
-            case "ventas":
-                rutaFXML = "/view/ventas.fxml";
-                break;
-            case "inventario":
-                rutaFXML = "/view/inventario.fxml";
-                break;
-            case "sri":
-                rutaFXML = "/view/sri.fxml";
-                break;
-
-            case "ccobrar":
-                rutaFXML = "/view/ccobrar.fxml";
-                break;
-
-            case "cpagar":
-                rutaFXML = "/view/cpagar.fxml";
-                break;
-
-            case "reportes":
-                rutaFXML = "/view/reportes.fxml";
-                break;
-            case "usuario":
-                rutaFXML = "/view/usuario.fxml";
-                break;
-            default:
-                System.out.println("Sección no reconocida: " + nombreSeccion);
-                return;
+        if (rutaFXML != null) {
+            cargarVista(rutaFXML);
+        } else {
+            System.out.println("Sección no reconocida: " + nombreSeccion);
         }
-
-        cargarVista(rutaFXML);
     }
+
 
 
     @FXML

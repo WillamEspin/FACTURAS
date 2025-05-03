@@ -20,7 +20,7 @@
             </graphic>
         </MFXCircleToggleNode>
     </HBox>
-    <VBox layoutX="227.0" layoutY="51.0" prefWidth="250.0" styleClass="sidebar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <VBox layoutX="227.0" layoutY="51.0" prefWidth="250.0" styleClass="sidebar" stylesheets="@../css/MFXColors.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
         <padding>
             <Insets bottom="10.0" left="10.0" top="60.0" />
         </padding>
@@ -62,7 +62,7 @@
                 </MFXRectangleToggleNode>
                 <MFXRectangleToggleNode fx:id="btnUsuario" prefHeight="60.0" prefWidth="220.0" text="Usuario">
                 </MFXRectangleToggleNode>
-                <MFXRectangleToggleNode fx:id="btnSalir" cache="true" cacheHint="SCALE_AND_ROTATE" cacheShape="false" prefHeight="60.0" prefWidth="220.0" text="Salir">
+                <MFXRectangleToggleNode fx:id="btnSalir" prefHeight="60.0" prefWidth="220.0" text="Salir">
                         <graphic>
                             <MFXFontIcon description="mfx-user" size="24" />
                         </graphic>
