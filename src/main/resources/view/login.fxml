@@ -26,8 +26,8 @@
             <Insets left="-15.0" right="-15.0" top="-15" />
         </GridPane.margin>
     </StackPane>
-    <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="header-label" text="Inicio de Sesion" GridPane.columnIndex="0" GridPane.columnSpan="1" />
+    <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Inicio de Sesion" GridPane.columnIndex="0" GridPane.columnSpan="1" />
     <MFXTextField fx:id="txtUsuario" alignment="CENTER" floatMode="BORDER" floatingText="Usuario" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
     <MFXPasswordField fx:id="txtContrasena" alignment="CENTER" floatMode="BORDER" floatingText="Contraseña" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-    <MFXButton buttonType="RAISED" minHeight="27.0" minWidth="70.0" onAction="#handleLogin" styleClass="outline-button" stylesheets="@../css/Buttons.css" text="Iniciar Sesion" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <MFXButton buttonType="RAISED" minHeight="27.0" minWidth="70.0" onAction="#handleLogin" text="Iniciar Sesion" GridPane.columnIndex="0" GridPane.rowIndex="3" />
 </GridPane>
